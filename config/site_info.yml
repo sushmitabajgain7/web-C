@@ -4,8 +4,8 @@ landing_page:
   welcome_message:
     text: 'Welcome to our office conference!'
   name_form:
-    text: 'What is your name and the password for the party?' 
-    name_placeholder_text: Your name here   
+    text: 'Please type group name and the password sent in your mail!' 
+    name_placeholder_text: Group name here   
     password_placeholder_text: Password here
     submit_button_text: Submit
 navbar:
