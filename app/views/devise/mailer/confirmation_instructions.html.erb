@@ -1,5 +1,10 @@
 <p>Welcome <%= @email %>!</p>
 
+<p>To join web conference your group name and password is given below: </p>
+
+<h6> Group name: </h6> <p> test </p>
+<h6> Password:</h6> <p> 123456 </p>
+
 <p>You can confirm your account email through the link below:</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
