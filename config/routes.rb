@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get '/', to: 'video#landing'
   get '/party', to: 'video#index'
   get '/screenshare', to: 'video#screenshare'

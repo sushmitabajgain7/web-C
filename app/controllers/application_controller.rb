@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  before_action :authenticate_user!
+  before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :set_site_lang_options
   before_action :set_site_welcome_options
   before_action :set_welcome_form_options
@@ -29,5 +31,11 @@ class ApplicationController < ActionController::Base
   def set_site_chat_options
     @submit_button_text = CONFIG['text_chat']['submit_button_text']
     @chat_placeholder_text = CONFIG['text_chat']['placeholder_text']
+  end
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :username])
   end
 end
