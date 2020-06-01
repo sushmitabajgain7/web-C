@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'opentok'
 gem 'dotenv-rails'
 gem 'devise'
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick', '~> 4.8'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
