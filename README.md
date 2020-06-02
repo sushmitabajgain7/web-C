@@ -23,4 +23,7 @@
 - bundle exec rake db:create db:migrate
 - rails s
 
+  In browser of choice, visit localhost:3000.
+  To stop the process, press ctrl+c.
+
 # web-C
