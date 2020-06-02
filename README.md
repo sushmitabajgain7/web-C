@@ -26,4 +26,11 @@
   In browser of choice, visit localhost:3000.
   To stop the process, press ctrl+c.
 
+# Testing
+
+Rspec have been used for writing test cases.
+To run test cases:
+
+* bundle exec rspec
+
 # web-C
